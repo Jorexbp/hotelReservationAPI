@@ -70,7 +70,7 @@ Se implementa un controlador global con `@ControllerAdvice` para manejar excepci
 ---
 
 ## Testing
-Se implementan pruebas unitarias y de integración con **JUnit 5** y **Mockito**.
+Se implementarán pruebas unitarias y de integración con **JUnit 5** y **Mockito**.
 
 Para ejecutar las pruebas:
 ```bash
@@ -80,7 +80,7 @@ mvn test
 ---
 
 ## Documentación con Swagger
-La API está documentada con **Springdoc OpenAPI** y se puede acceder en:
+La API aun NO está documentada con **Springdoc OpenAPI** y se puede acceder en:
 [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 ---
