@@ -16,6 +16,8 @@ Desarrollar una API REST con **Spring Boot** para la gestión de reservas de hab
 - H2 Database (para pruebas)
 - JUnit 5 y Mockito
 - Springdoc OpenAPI (Swagger)
+- Makefile (Opcional)
+- Docker (Opcional)
 
 ## Instalación y Ejecución
 1. Clonar el repositorio:
@@ -27,8 +29,15 @@ Desarrollar una API REST con **Spring Boot** para la gestión de reservas de hab
    ```bash
    mvn spring-boot:run
    ```
+- OPCIONAL Levantar Docker previamente y ejecutar el Makefile default:
+   ```bash
+   make
+   ```
 3. Acceder a la documentación de la API en Swagger:
    - [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+
+4. Acceder a la base de datos H2:
+   - [http://localhost:8080/h2](http://localhost:8080/h2)
 
 ---
 
@@ -51,7 +60,6 @@ Desarrollar una API REST con **Spring Boot** para la gestión de reservas de hab
 | DELETE  | `/reservations/{id}` | Cancelar una reserva | `204 No Content`, `404 Not Found` |
 
 ---
-
 ## Reglas de Negocio
 - Una habitación solo puede reservarse si está disponible.
 - No se permiten reservas con fechas pasadas.
@@ -94,4 +102,7 @@ La API aun NO está documentada con **Springdoc OpenAPI** y se puede acceder en:
 ---
 
 ## Autor
-@programando_con_jorge
+Instagram: @programando_con_jorge
+
+## Colaboradores
+GitHub: @manubravo
