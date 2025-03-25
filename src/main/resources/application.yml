@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: hotelReservationAPI
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:h2:mem:hotel_db}
+    driver-class-name: ${SPRING_DATASOURCE_DRIVER:org.h2.Driver}
+    username: ${SPRING_DATASOURCE_USERNAME:sa}
+    password: ${SPRING_DATASOURCE_PASSWORD:}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      path: /h2
+      settings:
+        web-allow-others: true
+server:
+  port: ${PORT:8080}
